@@ -1,0 +1,43 @@
+#main {
+  h2 {
+    width: 800px;
+  }
+
+  .wrapper {
+    background: linear-gradient(to bottom, var(--gray), var(--gray-light));
+    padding: 40px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 100px;
+  }
+
+  ol {
+    display: flex;
+    gap: 40px;
+
+    .card {
+      cursor: pointer;
+      width: 250px;
+      padding: 20px;
+      background-color: var(--gray-light);
+      border-radius: 20px;
+      transition: 0.5s;
+
+      * {
+        margin-bottom: 30px;
+      }
+
+      img {
+        width: 70px;
+        height: 70px;
+      }
+    }
+
+    .card:hover {
+      transform: rotate(-5deg);
+    }
+  }
+}

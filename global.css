@@ -1,0 +1,148 @@
+/* global */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #efefef;
+  --black-gray: #1c2a2b;
+  --black-brown: #1f2026;
+  --gray: #2c2f34;
+  --gray-light: #34363b;
+}
+
+body {
+  background-color: rgb(32, 32, 38);
+  background: linear-gradient(to bottom, var(--black-gray), var(--black-brown))
+    no-repeat;
+  height: 100%;
+  width: 100%;
+  color: var(--white);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  color: inherit;
+  background-color: inherit;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+a {
+  cursor: pointer;
+  transition: 0.12s;
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00d8ff;
+}
+
+.container {
+  max-width: 1560px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.btn-style-first {
+  position: relative;
+  background: linear-gradient(currentColor 0 0) bottom / var(--d, 0) 2px
+    no-repeat;
+
+  &:hover {
+    --d: 100%;
+  }
+}
+
+.btn-style-second {
+  height: 50px;
+  width: 215px;
+  border-radius: 20px;
+  background-color: var(--black-gray);
+
+  a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &:hover {
+    filter: brightness(120%);
+  }
+}
+
+.btn-style-third {
+  padding: 15px 55px;
+  border-radius: 10px;
+  background-color: #0a9c81;
+
+  &:hover {
+    filter: brightness(120%);
+    scale: 1.05;
+  }
+}
+
+/* header */
+
+#header {
+  padding: 25px 0;
+  margin-bottom: 60px;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+
+    div {
+      width: 400px;
+      display: flex;
+      gap: 20px;
+      justify-content: space-between;
+    }
+  }
+
+  img {
+    width: 60px;
+  }
+}
+
+#main {
+  margin-bottom: 60px;
+}
+
+/* footer */
+
+#footer {
+  padding: 45px 0;
+
+  img {
+    width: 40px;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+
+      div {
+        flex-direction: row;
+      }
+    }
+  }
+}
